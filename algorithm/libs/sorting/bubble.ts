@@ -1,4 +1,5 @@
 import { swap } from "../../helpers/swap";
+import { ErrorLog } from "../../logs/error";
 
 export function bubbleSort(data: number[]): number[] {
   for(let round = 0; round < data.length - 1; round++) {
@@ -9,6 +10,8 @@ export function bubbleSort(data: number[]): number[] {
         if(left > right) {
           data = swap(data, pair, pair + 1);
         }
+      } else {
+        throw new Error(`[ERROR] ${ErrorLog.UNDEFINED_VALUE}`);
       }
     }
   }
