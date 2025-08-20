@@ -8,7 +8,7 @@ describe("Sorting Algorithm Testings.", () => {
     let sortedNums: number[] = [1, 2, 3, 4, 5];
     expect(bubbleSort(nums)).toEqual(sortedNums); // Bubble Sort: 👍
     expect(selectionSort(nums)).toEqual(sortedNums); // Selection Sort: 👍
-    expect(insertionSort(nums)).toEqual(sortedNums); // Insertion Sort: ⚠️
+    expect(insertionSort(nums)).toEqual(sortedNums); // Insertion Sort: 👍
   });
 
   it("Sort Testing ~ Case 02: Average Case.", () => {
@@ -16,7 +16,7 @@ describe("Sorting Algorithm Testings.", () => {
     let sortedNums: number[] = [1, 3, 8, 26, 99];
     expect(bubbleSort(nums)).toEqual(sortedNums); // Bubble Sort: 👍
     expect(selectionSort(nums)).toEqual(sortedNums); // Selection Sort: 👍
-    expect(insertionSort(nums)).toEqual(sortedNums); // Insertion Sort: ⚠️
+    expect(insertionSort(nums)).toEqual(sortedNums); // Insertion Sort: 👍
   });
 
   it("Sort Testing ~ Case 03: Worst Case.", () => {
@@ -24,6 +24,6 @@ describe("Sorting Algorithm Testings.", () => {
     let sortedNums: number[] = [95, 96, 97, 98, 99];
     expect(bubbleSort(nums)).toEqual(sortedNums); // Bubble Sort: 👍
     expect(selectionSort(nums)).toEqual(sortedNums); // Selection Sort: 👍
-    expect(insertionSort(nums)).toEqual(sortedNums); // Insertion Sort: ⚠️
+    expect(insertionSort(nums)).toEqual(sortedNums); // Insertion Sort: 👍
   });
 });
